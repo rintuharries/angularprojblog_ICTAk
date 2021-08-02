@@ -1,0 +1,49 @@
+<div class='card'>
+  <form (ngSubmit)="approvePost()">
+<div class='card-header'>
+
+</div>
+<div class='card-body'>            
+<div class='table-responsive'>
+  <table class='table'>       
+  
+    <tbody> 
+      <tr>
+        <td> <label>Post Title</label></td>
+        <td><input type="text"  [(ngModel)]="postdetail.PostTitle"/></td>                  
+      </tr>  
+      <tr>
+        <td> <label>Created Time</label></td>
+        <td><input type="text"  [(ngModel)]="postdetail.CreatedTime"/></td>                  
+      </tr>   
+      <tr>
+          <td><label>Description</label></td>
+          <td><input type="text"  [(ngModel)]="postdetail.Description"/></td>                  
+        </tr>  
+        <tr>
+          <td><label>Image</label></td>
+          <td><input type="text" [(ngModel)]="postdetail.Image"/></td>                  
+        </tr>  
+        <tr>
+          <td><label>Author</label></td>
+          <td><input type="text"  [(ngModel)]="postdetail.Author"/></td>                  
+        </tr>  
+        <tr>
+          <td><label>AuthorId</label></td>
+          <td><input type="text"  [(ngModel)]="postdetail.AuthorID"/></td>                  
+        </tr> 
+        <tr>
+          <td><label>Status</label></td>
+          <td><input type="text"  [(ngModel)]="postdetail.Status"/></td>                  
+        </tr> 
+        <tr>
+              <td></td>
+              <td><input type="submit" value="Submit" /></td>                  
+            </tr>             
+    </tbody>
+  </table>
+</div>
+</div>
+</form>
+</div>
+

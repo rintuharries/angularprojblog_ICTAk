@@ -1,0 +1,19 @@
+<table  *ngIf = 'users && users.length'>
+    <thead>
+      <tr>
+        <th scope="col">User Name</th>
+        <th scope="col">Post Title</th>
+        <th scope="col">Created Time</th>
+        <th scope="col">Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let  post of posts'>
+        <td data-label=""></td>
+        <td data-label="Post Title">{{post.PostTitle}}</td>
+        <td data-label="CreatedTime">{{post.CreatedTime}}</td>
+        <td data-label="Author" >{{post.Author}}</td>
+        <td><i class="far fa-eye"><a routerLink="">View</a></i></td>
+      </tr>
+    </tbody>
+  </table>
