@@ -17,13 +17,13 @@ constructor(private http:HttpClient) { }
   }
   approvePost(post:any){
 
-    return this.http.get("http://localhost:3000/approvalstatus",post)
+    return this.http.put("http://localhost:3000/approvalstatus",post)
     .subscribe(data =>{console.log(data)})
   
   }
   rejectPost(id:any){
 
-    return this.http.get("http://localhost:3000/rejectpost"+id);
+    return this.http.delete("http://localhost:3000/rejectpost"+id);
    
   }
 
