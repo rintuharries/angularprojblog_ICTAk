@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./approvepost.component.css']
 })
 export class ApprovepostComponent implements OnInit {
-  postdetail=[
+  postdetail=
     {
       PostTitle: '',
       CreatedTime: '',
@@ -19,7 +19,7 @@ export class ApprovepostComponent implements OnInit {
       Author: '',
       AuthorID: '',
     }
-  ]
+  
   constructor(private router:Router,private postservice:PostService) { }
 
   ngOnInit(): void {
